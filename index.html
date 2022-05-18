@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="public/css/styles.css">
+    <title>SPLITTER</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <h1>SPLITTER</h1>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+        <div class="entrada">
+            <p>Select</p>
+            <div>
+                <i class='bx bxs-cart'></i>
+                <input type="number" placeholder="none" id="select">
+            </div>
+        </div>
+        <div class="opciones">
+            <p>Option buy $</p>
+            <div class="opciones__container">
+                <div class="op">
+                    <p>1</p>
+                    <p>Pizza $20</p>
+                </div>
+                <div class="op">
+                    <p>2</p>
+                    <p>Helado $5</p>
+                </div>
+                <div class="op">
+                    <p>3</p>
+                    <p>Pollo $16</p>
+                </div>
+                <div class="op">
+                    <p>4</p>
+                    <p>Bombones $4</p>
+                </div>
+                <div class="op">
+                    <p>5</p>
+                    <p>Jugo $3</p>
+                </div>
+                <div class="op">
+                    <p>6</p>
+                    <p>Limonada $2</p>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div class="entrada">
+        <p>Number of people</p>
+        <div>
+            <i class='bx bx-user'></i>
+            <input type="number" placeholder="0"  id="cantidad">
+        </div>
+    </div>
+</main>
+<!-- FOOTER -->
+    <footer>
+        <div class="salida">
+            <p>Producto:</p>
+            <p class="money" id="producto">--</p>
+        </div>
+        <div class="salida">
+            <p>Costo:</p>
+            <p class="money" id="costo">$0</p>
+        </div>
+        <div class="salida">
+            <p>Cantidad</p>
+            <p class="money" id="cantidadSalida">0</p>
+        </div>
+        <div class="salida">
+            <p>Total:</p>
+            <p class="money" id="total">$0</p>
+        </div>
+        <div class="container__button">
+            <button onclick="salida()">SUBMIT</button>
+            <button onclick="reset()">RESET</button>
+        </div>
+    </footer>
+    <script src="../src/main.js"></script>
+</body>
+</html>
