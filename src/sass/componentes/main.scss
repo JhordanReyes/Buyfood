@@ -1,0 +1,98 @@
+@import "var.scss";
+
+.main{
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.267);
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: $bg-color-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    gap: 20px;
+    .main__section-1{
+        width: 100%;
+    }
+    .main__section-2{
+        width: 100%;
+    }
+    .entrada{
+        p{
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        div{
+            background-color: $bg-color-3;
+            border-radius: 7px;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            i{
+                font-size: 25px;
+                color: $color-1;
+            }
+            input{
+                text-align: center;
+                background: none;
+                border: none;
+                width: 80px;
+                color: $color-2;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.opciones{
+    p{
+        margin-top: 10px;
+        font-weight: 600;
+    }
+    .opciones__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 10px auto;
+    }
+}    
+.op{
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-2;
+    color: $bg-color-2;
+    padding: 10px 5px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+    &:hover{
+        background-color: rgb(33, 75, 42);
+    }
+    p{
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 800px){
+    .main{
+        flex-direction: row;
+        max-width: 800px;
+    }
+    .opciones{
+        .opciones__container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            margin: 10px auto;
+            .op{
+                width: 140px;
+            }        
+        }
+    } 
+}
